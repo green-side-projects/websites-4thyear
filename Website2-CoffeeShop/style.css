@@ -1,0 +1,191 @@
+body {
+  background-color: #bdce7e;
+  background-image: url("https://images.unsplash.com/photo-1547314283-befb6cc5cf29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Adjust the alpha value as needed */
+}
+.brand {
+  font-weight: bold;
+  font-size: 90px;
+  margin-right: auto;
+  font-family: "CustomFont", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  font-family: "Courgette", cursive;
+}
+
+h1 {
+  color: #000000;
+  font-size: 50px;
+  text-shadow: 0 0 18px #fff;
+}
+
+p {
+  font-size: 30px;
+  text-shadow: 0 0 18px #fff;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; /* Add padding to both ends */
+}
+
+.grid-item {
+  flex: 0 0 auto; /* Disable flex-grow and flex-shrink */
+  padding: 10px;
+}
+
+.rounded-square {
+  width: 600px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.rounded-square-white {
+  width: 600px;
+  height: 500px;
+  background-color: #0066ff;
+  background-image: url("https://cdn.pixabay.com/photo/2021/02/17/08/20/nature-6023501_960_720.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+  border: 5px solid white;
+}
+
+.testimonial-text {
+  font-family: "Inconsolata", monospace;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #000000;
+  padding: 10px 20px; /* Add padding top/bottom and left/right */
+}
+
+.grid-container-3x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+
+.grid-item-3x3 {
+  padding: 10px;
+}
+
+.rounded-square-menu {
+  width: 500px;
+  height: 400px;
+  background-color: #0066ff;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+  border: 5px solid white;
+}
+
+.item-name {
+  font-size: 24px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px black;
+  animation: glowing 2s ease-in-out infinite;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0 20px; /* Add left and right padding */
+  color: #ffffff;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: disc;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.grid-item h2,
+.grid-item ul li {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("high-mount.personal-use.otf");
+}
