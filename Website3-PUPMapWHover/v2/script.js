@@ -1,8 +1,13 @@
 const descriptionElement = document.getElementById("description-text");
+const descriptionDescriptionElement = document.getElementById(
+  "description-description"
+);
 const descriptionImageElement = document.getElementById("description-image");
 const areas = document.querySelectorAll("area");
 const defaultImageSource = "default-image.jpg";
-const defaultDescriptionText = "Default Description Text";
+const defaultDescriptionText = "PUP NavMap";
+const defaultDescriptionDescription =
+  "Hover your mouse on the MAP to view each building";
 
 document.addEventListener("mousemove", function (event) {
   var cursor = document.querySelector(".custom-cursor");
@@ -12,14 +17,20 @@ document.addEventListener("mousemove", function (event) {
 
 areas.forEach((area) => {
   area.addEventListener("mouseover", () => {
-    const description = area.getAttribute("data-description");
-    const imageSource = area.getAttribute("data-image");
-    descriptionElement.textContent = description || defaultDescriptionText;
-    descriptionImageElement.src = imageSource || defaultImageSource;
+    const description =
+      area.getAttribute("data-description") || defaultDescriptionText;
+    const descriptionDescription =
+      area.getAttribute("data-description-description") ||
+      defaultDescriptionDescription;
+    const imageSource = area.getAttribute("data-image") || defaultImageSource;
+    descriptionElement.textContent = description;
+    descriptionDescriptionElement.textContent = descriptionDescription;
+    descriptionImageElement.src = imageSource;
   });
 
   area.addEventListener("mouseout", () => {
-    descriptionElement.textContent = "";
+    descriptionElement.textContent = defaultDescriptionText;
+    descriptionDescriptionElement.textContent = defaultDescriptionDescription;
     descriptionImageElement.src = defaultImageSource;
   });
 });
@@ -27,11 +38,11 @@ areas.forEach((area) => {
 // Set default image and description text on page load
 window.addEventListener("load", () => {
   descriptionElement.textContent = defaultDescriptionText;
+  descriptionDescriptionElement.textContent = defaultDescriptionDescription;
   descriptionImageElement.src = defaultImageSource;
 });
 
 // Rest of your JavaScript code...
-
 document.addEventListener("mousemove", function (event) {
   var cursor = document.querySelector(".custom-cursor");
   var trailingCursor = document.createElement("div");

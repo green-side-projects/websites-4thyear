@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>2 x 1 Grid Example</title>
+    <title>PUP NavMap</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -25,14 +25,21 @@
       <div class="grid-item">
         <img src="pupimagemap.png" usemap="#image-map" alt="Campus Map" />
       </div>
-      <div class="grid-item" id="description">
-        <div class="description-content">
-          <div id="description-text"></div>
-          <img
-            id="description-image"
-            alt="Description Image"
-            class="description-image"
-          />
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="pupimagemap.png" usemap="#image-map" alt="Campus Map" />
+        </div>
+        <div class="grid-item" id="description">
+          <div class="description-content">
+            <div id="description-text"></div>
+
+            <img
+              id="description-image"
+              alt="Description Image"
+              class="description-image"
+            />
+            <div id="description-description"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -47,6 +54,7 @@
         shape="circle"
         data-description="This is the Main Building"
         data-image="main-building.jpg"
+        data-description-description="The PUP Main Building stands tall as a beacon of knowledge, its contemporary design blending seamlessly with nature to inspire the pursuit of academic excellence at the heart of Sta. Mesa's state university."
       />
       <area
         target=""
@@ -57,6 +65,7 @@
         shape="circle"
         data-description="This is the Chapel"
         data-image="chapel.jpg"
+        data-description-description="The Interfaith Chapel at PUP, an architectural marvel of unity and spiritual harmony, stands as a sanctuary where diverse beliefs converge, fostering understanding and embracing the shared values that enrich the vibrant campus"
       />
       <area
         target=""
@@ -67,6 +76,7 @@
         shape="poly"
         data-description="This is the Oval"
         data-image="oval.jpg"
+        data-description-description="The Oval Athletic Field at PUP, a sprawling expanse of greenery teeming with energy and excitement, serves as a hub for physical prowess and sporting camaraderie, igniting the passion for athletic excellence"
       />
       <area
         target=""
@@ -77,6 +87,7 @@
         shape="poly"
         data-description="This is the Charlie Del Rosario Building"
         data-image="charlie.jpg"
+        data-description-description="The Charlie Del Rosario Building stands as a poignant tribute to the courageous spirit and unwavering dedication of Charlie Del Rosario, a symbol of resilience and sacrifice in the face of oppression, embodying the indomitable spirit of justice and remembrance within the esteemed halls of PUP"
       />
       <area
         target=""
@@ -87,6 +98,7 @@
         shape="poly"
         data-description="This is the Canteen"
         data-image="canteen.jpg"
+        data-description-description="The bustling canteen at PUP, a vibrant culinary hub, tantalizes taste buds with a diverse array of flavors, serving as a melting pot of gastronomic delights and social interaction within the lively campus."
       />
       <area
         target=""
@@ -97,6 +109,7 @@
         shape="poly"
         data-description="This is the Lagoon"
         data-image="lagoon.jpg"
+        data-description-description="Despite the unfortunate algal infestation, the PUP Lagoon still retains its picturesque charm, offering students a serene retreat amidst nature's embrace, while nearby culinary establishments provide a delightful array of delicious food options to satisfy their appetites "
       />
       <area
         target=""
@@ -107,6 +120,7 @@
         shape="poly"
         data-description="This is the Laboratory High School"
         data-image="lab-high.jpg"
+        data-description-description="PUP Laboratory High School, a beacon of academic excellence and innovation, nurtures the minds of talented students, empowering them to reach their full potential and become future leaders"
       />
       <area
         target=""
@@ -117,6 +131,7 @@
         shape="poly"
         data-description="This is the Pool"
         data-image="pool.jpg"
+        data-description-description="The inviting pool at PUP provides a refreshing oasis for students and visitors alike, offering a cool respite from the bustling campus life and a place to relax and unwind in the heart of Sta. Mesa's state university."
       />
     </map>
 
