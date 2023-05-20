@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 500px; /* Added 300px column for description */
+  grid-template-columns: 1fr 500px;
   grid-template-rows: 1fr;
   grid-gap: 10px;
 }
@@ -22,6 +22,7 @@
   font-weight: bold;
   text-align: center;
   padding-bottom: 10px;
+  padding-right: 20px;
 }
 
 #description-description {
@@ -36,6 +37,9 @@
   color: yellow;
 }
 
+#description-image {
+  padding-left: 30px;
+}
 img {
   max-width: 100%;
 }
@@ -44,14 +48,11 @@ body {
   font-family: Helvetica;
   margin: 0;
   zoom: 1;
-}
-
-html,
-body {
-  touch-action: manipulation;
+  touch-action: none;
   overflow: hidden;
 }
 
+html,
 a {
   text-decoration: none;
   color: #000;
@@ -96,7 +97,7 @@ a {
   position: fixed;
   width: 20px;
   height: 20px;
-  background-color: green;
+  background-color: #ff007f;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9998;
