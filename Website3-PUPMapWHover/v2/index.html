@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2 x 1 Grid Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-identity">
+        <h1><a href="#">Site Name</a></h1>
+      </div>
+      <nav class="site-navigation">
+        <ul class="nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="pupimagemap.png" usemap="#image-map" alt="Campus Map" />
+      </div>
+      <div class="grid-item" id="description">
+        <div id="description-text"></div>
+      </div>
+    </div>
+
+    <map name="image-map">
+      <area
+        target=""
+        alt="Main Building"
+        title="Main Building"
+        href=""
+        coords="542,613,152"
+        shape="circle"
+        data-description="This is the Main Building"
+      />
+      <area
+        target=""
+        alt="Chapel"
+        title="Chapel"
+        href=""
+        coords="761,720,71"
+        shape="circle"
+        data-description="This is the Chapel"
+      />
+      <area
+        target=""
+        alt="Oval"
+        title="Oval"
+        href=""
+        coords="976,843,913,725,963,619,1057,490,1150,415,1208,419,1273,442,1318,596,1186,770,1070,863"
+        shape="poly"
+        data-description="This is the Oval"
+      />
+      <area
+        target=""
+        alt="Charlie Del Rosario"
+        title="Charlie Del Rosario"
+        href=""
+        coords="249,296,277,249,431,335,404,389"
+        shape="poly"
+        data-description="This is the Charlie Del Rosario Building"
+      />
+      <area
+        target=""
+        alt="Canteen"
+        title="Canteen"
+        href=""
+        coords="350,376,282,446,353,490,398,400"
+        shape="poly"
+        data-description="This is the Canteen"
+      />
+      <area
+        target=""
+        alt="Lagoon"
+        title="Lagoon"
+        href=""
+        coords="524,420,563,401,572,361,612,326,650,317,659,269,699,224,746,259,718,308,671,396,586,423,554,432"
+        shape="poly"
+        data-description="This is the Lagoon"
+      />
+      <area
+        target=""
+        alt="Lab High"
+        title="Lab High"
+        href=""
+        coords="272,26,204,116,214,191,427,314,439,301,389,88"
+        shape="poly"
+        data-description="This is the Laboratory High School"
+      />
+      <area
+        target=""
+        alt="Pool"
+        title="Pool"
+        href=""
+        coords="813,62,809,121,960,139,963,71"
+        shape="poly"
+        data-description="This is the Pool"
+      />
+    </map>
+
+    <script src="script.js"></script>
+    <div class="custom-cursor"></div>
+  </body>
+</html>

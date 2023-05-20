@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <g id="dog-group">
+    <!-- Body -->
+    <path d="M100,150c-35.355,0-64-28.645-64-64v-5c0-35.355,28.645-64,64-64s64,28.645,64,64v5C164,121.355,135.355,150,100,150z" fill="#cfa371" />
+
+    <!-- Head -->
+    <circle cx="100" cy="60" r="40" fill="#8b5e3c" />
+
+    <!-- Eyes -->
+    <circle cx="85" cy="55" r="5" fill="white" />
+    <circle cx="115" cy="55" r="5" fill="white" />
+
+    <!-- Nose -->
+    <circle cx="100" cy="70" r="4" fill="black" />
+
+    <!-- Ears -->
+    <path d="M60,45L80,25L70,45" fill="#8b5e3c" />
+    <path d="M140,45L120,25L130,45" fill="#8b5e3c" />
+
+    <!-- Tail -->
+    <path d="M110,150c-15,0-20,10-20,10" fill="none" stroke="#8b5e3c" stroke-width="5" />
+
+    <!-- Legs -->
+    <rect x="80" y="120" width="15" height="40" fill="#cfa371" />
+    <rect x="105" y="120" width="15" height="40" fill="#cfa371" />
+  </g>
+</svg>
