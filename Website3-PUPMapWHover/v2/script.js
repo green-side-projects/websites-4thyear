@@ -9,12 +9,6 @@ const defaultDescriptionText = "PUP NavMap";
 const defaultDescriptionDescription =
   "Hover your mouse on the MAP to view each building";
 
-document.addEventListener("mousemove", function (event) {
-  var cursor = document.querySelector(".custom-cursor");
-  cursor.style.left = event.clientX + "px";
-  cursor.style.top = event.clientY + "px";
-});
-
 areas.forEach((area) => {
   area.addEventListener("mouseover", () => {
     const description =
@@ -35,14 +29,15 @@ areas.forEach((area) => {
   });
 });
 
-// Set default image and description text on page load
+// Set default image and description text on page load / on page refresh
 window.addEventListener("load", () => {
   descriptionElement.textContent = defaultDescriptionText;
   descriptionDescriptionElement.textContent = defaultDescriptionDescription;
   descriptionImageElement.src = defaultImageSource;
 });
 
-// Rest of your JavaScript code...
+// Trailing code
+
 document.addEventListener("mousemove", function (event) {
   var cursor = document.querySelector(".custom-cursor");
   var trailingCursor = document.createElement("div");
