@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
   descriptionImageElement.src = defaultImageSource;
 });
 
-// Trailing
+// Rest of your JavaScript code...
 document.addEventListener("mousemove", function (event) {
   var cursor = document.querySelector(".custom-cursor");
   var trailingCursor = document.createElement("div");
