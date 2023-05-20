@@ -28,7 +28,15 @@ img {
 body {
   font-family: Helvetica;
   margin: 0;
+  zoom: 1;
 }
+
+html,
+body {
+  touch-action: manipulation;
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -61,10 +69,22 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #ff0000; /* Set your desired color here */
+  background-color: orange;
   pointer-events: none;
   z-index: 9999;
+}
+
+.trailing-cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
 }

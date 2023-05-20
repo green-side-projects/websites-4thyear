@@ -2,12 +2,16 @@
 <html>
   <head>
     <title>2 x 1 Grid Example</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="site-identity">
-        <h1><a href="#">Site Name</a></h1>
+        <h1><a href="#">PUP NavMap</a></h1>
       </div>
       <nav class="site-navigation">
         <ul class="nav">
@@ -22,7 +26,14 @@
         <img src="pupimagemap.png" usemap="#image-map" alt="Campus Map" />
       </div>
       <div class="grid-item" id="description">
-        <div id="description-text"></div>
+        <div class="description-content">
+          <div id="description-text"></div>
+          <img
+            id="description-image"
+            alt="Description Image"
+            class="description-image"
+          />
+        </div>
       </div>
     </div>
 
@@ -35,6 +46,7 @@
         coords="542,613,152"
         shape="circle"
         data-description="This is the Main Building"
+        data-image="main-building.jpg"
       />
       <area
         target=""
@@ -44,6 +56,7 @@
         coords="761,720,71"
         shape="circle"
         data-description="This is the Chapel"
+        data-image="chapel.jpg"
       />
       <area
         target=""
@@ -53,6 +66,7 @@
         coords="976,843,913,725,963,619,1057,490,1150,415,1208,419,1273,442,1318,596,1186,770,1070,863"
         shape="poly"
         data-description="This is the Oval"
+        data-image="oval.jpg"
       />
       <area
         target=""
@@ -62,6 +76,7 @@
         coords="249,296,277,249,431,335,404,389"
         shape="poly"
         data-description="This is the Charlie Del Rosario Building"
+        data-image="charlie.jpg"
       />
       <area
         target=""
@@ -71,6 +86,7 @@
         coords="350,376,282,446,353,490,398,400"
         shape="poly"
         data-description="This is the Canteen"
+        data-image="canteen.jpg"
       />
       <area
         target=""
@@ -80,6 +96,7 @@
         coords="524,420,563,401,572,361,612,326,650,317,659,269,699,224,746,259,718,308,671,396,586,423,554,432"
         shape="poly"
         data-description="This is the Lagoon"
+        data-image="lagoon.jpg"
       />
       <area
         target=""
@@ -89,6 +106,7 @@
         coords="272,26,204,116,214,191,427,314,439,301,389,88"
         shape="poly"
         data-description="This is the Laboratory High School"
+        data-image="lab-high.jpg"
       />
       <area
         target=""
@@ -98,6 +116,7 @@
         coords="813,62,809,121,960,139,963,71"
         shape="poly"
         data-description="This is the Pool"
+        data-image="pool.jpg"
       />
     </map>
 
